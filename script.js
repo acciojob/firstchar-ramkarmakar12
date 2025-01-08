@@ -1,12 +1,14 @@
 function firstChar(text) {
   // your code here
-	text=text.trim();
+  str = str.trim();
 
-	  if (str === '') {
+  // If the string is empty after trimming, return an empty string
+  if (str === '') {
     return '';
   }
-	let first = text.charAt(0);
-	return first;
+
+  // Return the first character
+  return str[0];
 }
 
 // Do not change the code below
