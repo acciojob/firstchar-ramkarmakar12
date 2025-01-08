@@ -1,6 +1,10 @@
 function firstChar(text) {
   // your code here
 	text=text.trim();
+
+	  if (str === '') {
+    return '';
+  }
 	let first = text.charAt(0);
 	return first;
 }
