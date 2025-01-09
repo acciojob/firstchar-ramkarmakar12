@@ -1,13 +1,9 @@
 function firstChar(str) {
-  // Iterate through the string
-  for (let i = 0; i < str.length; i++) {
-    // Check if the character is not a space
-    if (str[i] !== ' ') {
-      return str[i];
-    }
-  }
-  // If no non-space character is found, return an empty string
-  return '';
+  // Trim leading and trailing spaces for simplicity
+  const trimmedStr = str.trim();
+
+  // Return the first character if available, otherwise an empty string
+  return trimmedStr.length > 0 ? trimmedStr[0] : '';
 }
 
 // Do not change the code below
