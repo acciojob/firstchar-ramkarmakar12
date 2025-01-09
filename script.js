@@ -1,14 +1,13 @@
-function firstChar(text) {
-  // your code here
-  str = str.trim();
-
-  // If the string is empty after trimming, return an empty string
-  if (str === '') {
-    return '';
+function firstChar(str) {
+  // Iterate through the string
+  for (let i = 0; i < str.length; i++) {
+    // Check if the character is not a space
+    if (str[i] !== ' ') {
+      return str[i];
+    }
   }
-
-  // Return the first character
-  return str[0];
+  // If no non-space character is found, return an empty string
+  return '';
 }
 
 // Do not change the code below
